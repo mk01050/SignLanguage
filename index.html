@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Call App with Sign Language Translation</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Video Call App</h1>
+            <input type="text" id="username" placeholder="Enter username to call">
+            <button id="callButton">Call</button>
+        </header>
+        <main>
+            <div id="videoContainer">
+                <video id="localVideo" autoplay muted></video>
+                <video id="remoteVideo" autoplay></video>
+            </div>
+            <div id="translationContainer">
+                <h2>Sign Language Translation</h2>
+                <p id="translationOutput">Translation will appear here...</p>
+            </div>
+        </main>
+    </div>
+    <script defer src="app.js"></script>
+</body>
+</html>
